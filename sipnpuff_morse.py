@@ -23,7 +23,7 @@ char_start = False
 char = ""
 
 while True:
-    # driver checks conversion ready status, so OK do run this as fast as needed
+    # driver checks conversion ready status, so OK to run this as fast as needed
     pressure = mpr.pressure
 
     # PUFF = dit
@@ -50,5 +50,5 @@ while True:
         char_start = False
         print(char+"   ", end='')
         char = ""
-        # let do a quick re-cal while we're here...
+        # lets do a quick re-cal while we're here...
         sip_threshold , puff_threshold = pressure_sensor_init(5, 0.01)
